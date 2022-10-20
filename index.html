@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="KANDA WEB カンダのポートフォリオサイトです。"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!--①-->
+    <meta name="twitter:site" content="@tee__eng" />
+    <!--②-->
+    <meta property="og:url" content="https://kanda-web.com" />
+    <!--③-->
+    <meta property="og:title" content="KANDA WEB" />
+    <!--④-->
+    <meta
+      property="og:description"
+      content="KANDA WEB カンダのポートフォリオサイトです。"
+    />
+    <!--⑤-->
+    <meta property="og:image" content="https://kanda-web.com/img/card.png" />
+    <!--⑥-->
+    <title>kandalog</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- jQuery -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      defer
+    ></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto+Slab:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon.ico" />
+    <!-- original -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner inner">
+        <h1 class="header__logo"><a href="#">KANDA</a></h1>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="#about">私について</a></li>
+            <li class="header__item"><a href="#service">できること</a></li>
+            <li class="header__item"><a href="#price">価格</a></li>
+            <li class="header__item"><a href="#works">実績</a></li>
+            <li class="header__item"><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hamburger-menu -->
+    <div class="drawer-icon">
+      <div class="drawer-icon__bars">
+        <div class="drawer-icon__bars1"></div>
+        <div class="drawer-icon__bars2"></div>
+        <div class="drawer-icon__bars3"></div>
+      </div>
+    </div>
+
+    <div class="drawer-content">
+      <div class="drawer-content__items">
+        <div class="drawer-content__item">
+          <a href="#about" class="close">私について</a>
+        </div>
+        <div class="drawer-content__item">
+          <a href="#service" class="close">できること</a>
+        </div>
+        <div class="drawer-content__item">
+          <a href="#price" class="close">価格</a>
+        </div>
+        <div class="drawer-content__item">
+          <a href="#works" class="close">実績</a>
+        </div>
+        <div class="drawer-content__item">
+          <a href="#contact" class="close">お問い合わせ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-background"></div>
+
+    <!-- end hamburger-menu -->
+
+    <!-- loading animation -->
+    <div class="loading__wrap active" id="loading">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div class="blind__card"><img src="./img/card.png" alt="kanda-web" /></div>
+    <main>
+      <!-- fv -->
+      <div class="fv">
+        <div class="fv__left">
+          <div class="fv__left-contents">
+            <p class="fv__left-message">KANDA WEB</p>
+          </div>
+        </div>
+        <div class="fv__right">
+          <div class="fv__right-contents">
+            <p class="fv__right-message">高品質を</p>
+            <p class="fv__right-message">低価格で</p>
+          </div>
+          <div class="scrollDown"><a href="#about">SCROLL DOWN</a></div>
+        </div>
+      </div>
+
+      <!-- about -->
+      <section class="section section__about inner about__inner" id="about">
+        <h2 class="util__head">私について</h2>
+        <div class="about__contents first">
+          <div class="about__picture">
+            <img src="./img/about.png" alt="kanda" />
+          </div>
+          <dl class="about__dl">
+            <div class="about__row">
+              <dt class="about__dt">氏名</dt>
+              <dd class="about__dd">神田崇彰</dd>
+            </div>
+
+            <div class="about__row">
+              <dt class="about__dt">フリガナ</dt>
+              <dd class="about__dd">カンダタカアキ</dd>
+            </div>
+
+            <div class="about__row">
+              <dt class="about__dt">年齢</dt>
+              <dd class="about__dd">〇〇</dd>
+            </div>
+
+            <div class="about__row">
+              <dt class="about__dt">住所</dt>
+              <dd class="about__dd">神奈川県 横浜市</dd>
+            </div>
+
+            <div class="about__row">
+              <dt class="about__dt">職種</dt>
+              <dd class="about__dd">〇〇</dd>
+            </div>
+
+            <div class="about__row">
+              <dt class="about__dt">生年月日</dt>
+              <dd class="about__dd">1999年 9月 12日</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="about__contents">
+          <div class="about__skill">
+            <div class="about__dt">スキル</div>
+            <ul class="skill__list first">
+              <li class="skill__item">
+                <img src="./img/html5.png" alt="html" />
+              </li>
+              <li class="skill__item">
+                <img src="./img/css3.png" alt="css" />
+              </li>
+              <li class="skill__item"><img src="./img/js.png" alt="js" /></li>
+            </ul>
+            <ul class="skill__list second">
+              <li class="skill__item"><img src="./img/php.png" alt="php" /></li>
+              <li class="skill__item">
+                <img src="./img/wordpress.png" alt="wordpress" />
+              </li>
+              <li class="skill__item"><img src="./img/xd.png" alt="xd" /></li>
+            </ul>
+          </div>
+
+          <div class="about__strong">
+            <div class="about__dt strong">自己の強み</div>
+            <p class="about__strong-text">
+              即レスを心がけ最大限のサポートを致します。
+            </p>
+            <p class="about__strong-text">
+              サーバー？ドメイン？どうすればいいの？
+            </p>
+            <p class="about__strong-text">
+              不安なことがあればなんでもご相談ください。
+            </p>
+            <p class="about__strong-text">1日の作業時間は6時間</p>
+            <p class="about__strong-text">
+              しっかり時間を確保し制作いたします。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- service -->
+      <section
+        class="section section__service inner service__inner"
+        id="service"
+      >
+        <h2 class="util__head">できること</h2>
+        <ul class="service__list">
+          <li class="service__item">
+            <h3 class="service__item-head homepage">ホームページ制作</h3>
+            <div class="service__picture">
+              <img src="./img/service_homepage.png" alt="wordpress" />
+            </div>
+            <p class="service__text">
+              有料テンプレートを利用することでリーズナブルで高品質なwebサイトを作成します。
+              専門知識なしでもwebサイトの更新が可能です。
+              サーバー・ドメインの契約もサポート致します。<br />
+              静的サイトのwordpress化も対応致します。
+            </p>
+          </li>
+
+          <li class="service__item">
+            <h3 class="service__item-head code">コーディング</h3>
+            <div class="service__picture">
+              <img src="./img/service_cording.png" alt="coding" />
+            </div>
+            <p class="service__text">
+              デザインカンプからのコーディングを行います。 <br />
+              SEOや保守運用しやすいコーディングを意識して行います。
+              納品前に独自で品質チェックを行い質を担保できるように努めます。
+            </p>
+          </li>
+
+          <li class="service__item">
+            <h3 class="service__item-head setting">保守・運用</h3>
+            <div class="service__picture">
+              <img src="./img/service_setting.png" alt="setting" />
+            </div>
+            <p class="service__text">
+              サブスクリプションで保守・運用も行います。
+              軽度のデザイン変更(文言変更・画像変更)等
+              定期的なバックアップ作成等行います。
+              大幅なデザイン変更・ページの追加・機能追加には別途費用がかかります。
+            </p>
+          </li>
+        </ul>
+        <p class="service__details">
+          ※不明な点があれば遠慮なくご相談ください。
+        </p>
+      </section>
+
+      <!-- price -->
+      <section class="section section__price" id="price">
+        <div class="inner price__inner">
+          <h2 class="util__head">価格</h2>
+          <table class="price__table">
+            <tr>
+              <th>コーディング(トップ)</th>
+              <td>30,000<span>円</span>〜</td>
+            </tr>
+            <tr>
+              <th>コーディング(下層)</th>
+              <td>10,000円〜</td>
+            </tr>
+            <tr>
+              <th>コーディング+WP化</th>
+              <td>120,000<span>円</span>〜</td>
+            </tr>
+            <tr>
+              <th>WordPress化</th>
+              <td>50,000<span>円</span>〜</td>
+            </tr>
+            <tr>
+              <th>Javascriptの実装</th>
+              <td>5,000<span>円</span>〜</td>
+            </tr>
+          </table>
+          <p class="price__ditails">
+            ※詳しい費用はお問い合わせからご確認ください。
+          </p>
+        </div>
+      </section>
+
+      <!-- works -->
+      <section class="section section__works inner works__inner" id="works">
+        <h2 class="util__head">実績</h2>
+        <ul class="works__list">
+          <li class="works__item">
+            <p class="works__title">Wordpress</p>
+            <div class="works__picture">
+              <!-- <a
+                href="https://kandalog.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./img/works_maha.png" alt="wordpress"
+              /></a> -->
+              <p>
+                <img src="./img/works_maha.png" alt="wordpress" />
+              </p>
+            </div>
+          </li>
+          <li class="works__item">
+            <p class="works__title">コーディング</p>
+            <div class="works__picture">
+              <!-- <a
+                href="https://tee.xsrv.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./img/works_cute.png" alt="coding"
+              /></a> -->
+              <p><img src="./img/works_cute.png" alt="coding" /></p>
+            </div>
+          </li>
+          <li class="works__item">
+            <p class="works__title">コーディング</p>
+            <div class="works__picture">
+              <!-- <a
+                href="https://test-tea-party.space/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./img/works_other.png" alt="coding"
+              /></a> -->
+              <p><img src="./img/works_other.png" alt="coding" /></p>
+            </div>
+          </li>
+        </ul>
+        <!-- <p class="works__ditails">※画像をクリックで詳細を見る</p> -->
+        <p class="works__more">
+          <a
+            href="https://salon.io/kandalog/https-tee-xsrv-jp"
+            target="_blank"
+            rel="noopener noreferrer"
+            >他の実績を見る ></a
+          >
+        </p>
+      </section>
+
+      <!-- contact -->
+      <div class="contact contact__inner" id="contact">
+        <h2 class="util__head">お問い合わせ</h2>
+        <div class="contact__form">
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeZ9B3VSSH3mxZy0Cvhu-R83lSKs3KSk_Q_svHNsCwweKNqEg/formResponse"
+            class="contact-form"
+            id="js-form"
+          >
+            <dl class="contact__form-dl">
+              <div class="contact__form-row">
+                <dt class="contact__form-label"><label>お問合せ種別</label></dt>
+                <dd class="contact__form-input">
+                  <select name="entry.1777257636" required size="1">
+                    <option value="------">------</option>
+                    <option value="webサイト制作依頼(WordPress)">
+                      webサイト制作依頼(WordPress)
+                    </option>
+                    <option value="コーディング依頼">コーディング依頼</option>
+                    <option value="保守・運用依頼">保守・運用依頼</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </dd>
+              </div>
+
+              <div class="contact__form-row">
+                <dt class="contact__form-label">
+                  <label>法人/個人の選択</label>
+                </dt>
+                <dd class="contact__form-input">
+                  <div class="contact__radio-wrap">
+                    <label class="contact__radio">
+                      <input
+                        type="radio"
+                        name="entry.2127910070"
+                        value="法人"
+                        class="contact__radio-input"
+                        checked
+                      />
+                      <span class="contact__radio-part">法人</span>
+                    </label>
+
+                    <label class="contact__radio">
+                      <input
+                        type="radio"
+                        name="entry.2127910070"
+                        value="個人"
+                        class="contact__radio-input"
+                      />
+                      <span class="contact__radio-part">個人</span>
+                    </label>
+                  </div>
+                </dd>
+              </div>
+
+              <div class="contact__form-row">
+                <dt class="contact__form-label"><label>お名前</label></dt>
+                <dd class="contact__form-input">
+                  <input name="entry.577117610" type="text" required />
+                </dd>
+              </div>
+
+              <div class="contact__form-row">
+                <dt class="contact__form-label">
+                  <label>メールアドレス</label>
+                </dt>
+                <dd class="contact__form-input">
+                  <input name="emailAddress" type="email" required />
+                </dd>
+              </div>
+
+              <div class="contact__form-row">
+                <dt class="contact__form-label">
+                  <label>お問い合わせ内容</label>
+                </dt>
+                <dd class="contact__form-input">
+                  <textarea name="entry.381188485" required></textarea>
+                </dd>
+              </div>
+            </dl>
+
+            <div class="contact__form-check">
+              <p>
+                <label class="contact__privacy">
+                  <input
+                    name="entry.410572099"
+                    type="checkbox"
+                    value="プライバシーポリシーに同意します。"
+                    class="contact__privacy-input"
+                    required
+                  />
+                  <span class="contact-privacy-part"></span>
+                </label>
+                <a
+                  href="https://drive.google.com/file/d/1OTJu9GeAqKLBpSnQxYfWakUExFfLR3Ft/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >プラバシーポリシー</a
+                >に同意します。
+              </p>
+            </div>
+            <div class="contact__form-button">
+              <button id="js-submit" type="submit" class="contact__form-button">
+                送信
+              </button>
+            </div>
+          </form>
+
+          <div id="js-success" class="contact-message">
+            <p>送信完了しました。ありがとうございました。</p>
+          </div>
+          <div id="js-error" class="contact-message error">
+            <p>送信に失敗しました。ページを更新して再度送信してください</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="to-top"><a href="#">V</a></div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__logo">KANDA</p>
+      <div class="footer__sns">
+        <a
+          href="https://twitter.com/kanda__eng"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./img/Twitter.png" alt="twitter"
+        /></a>
+      </div>
+      <p class="copyright">&copy; 2021 Kanda All rights reserved</p>
+    </footer>
+  </body>
+</html>
